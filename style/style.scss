@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black !important;
+}
+.container-fluid{
+    padding: 0;
+    & h1{
+        color: whitesmoke;
+        font-family: 'Quintessential','Otomanopee One',Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 200;
+
+        & .description{
+            font-weight: lighter;
+            font-size: 1.2rem;
+        }
+    }
+    & .separator{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFD700;
+        height: .01rem;
+    }
+    & .mail_div{
+        & #mail_logo{
+            position: absolute;
+            margin: 0;
+            top: 1%;
+            right: 0;  
+            padding-right: 5%;
+            padding-top: 2%; 
+            & img{
+                float: right;
+                width: 20%;
+            }
+        }
+        & #mail_link{
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            font-family: 'Quintessential','Otomanopee One',Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            text-shadow: .15rem .15rem .15rem lighten(whitesmoke, 40%);
+            &:hover{
+                animation-name: textHoverAnim;
+                animation-duration: 350ms;
+                transition-timing-function: cubic-bezier(.14,1.24,.89,-0.2)
+            }
+        }
+    }
+    & #pictures_row_section{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        & .image_div{
+            transition: all 500ms ease-in-out;
+            &:hover{
+                box-shadow: 0 0 .15rem #FFD700;
+            }
+
+            & .creations_image{
+                transition: all 500ms ease-in-out;
+                &:hover{
+                    opacity: .3;
+                }
+            }
+        }
+    }
+}
+@keyframes textHoverAnim{
+    from{
+        text-shadow: .15rem .15rem .15rem lighten(whitesmoke, 40%);
+    }
+    25%{
+        text-shadow: .50rem .15rem .15rem lighten(whitesmoke, 40%);
+    }
+    50%{
+        text-shadow: 0rem .15rem .15rem lighten(whitesmoke, 40%);
+    }
+    75%{
+        text-shadow: -.50rem .15rem .15rem lighten(whitesmoke, 40%);
+    }
+    to{
+        text-shadow: .15rem .15rem .15rem lighten(whitesmoke, 40%);
+    }
+}
+@media screen and (max-width: 350px) {
+    .description{
+        display: block;
+    }
+}

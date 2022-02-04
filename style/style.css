@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black !important;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.container-fluid h1 {
+  color: whitesmoke;
+  font-family: 'Quintessential','Otomanopee One',Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
+}
+
+.container-fluid h1 .description {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.container-fluid .separator {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFD700;
+  height: .01rem;
+}
+
+.container-fluid .mail_div #mail_logo {
+  position: absolute;
+  margin: 0;
+  top: 1%;
+  right: 0;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+
+.container-fluid .mail_div #mail_logo img {
+  float: right;
+  width: 20%;
+}
+
+.container-fluid .mail_div #mail_link {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-family: 'Quintessential','Otomanopee One',Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-shadow: 0.15rem 0.15rem 0.15rem white;
+}
+
+.container-fluid .mail_div #mail_link:hover {
+  -webkit-animation-name: textHoverAnim;
+          animation-name: textHoverAnim;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  -webkit-transition-timing-function: cubic-bezier(0.14, 1.24, 0.89, -0.2);
+          transition-timing-function: cubic-bezier(0.14, 1.24, 0.89, -0.2);
+}
+
+.container-fluid #pictures_row_section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid #pictures_row_section .image_div {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.container-fluid #pictures_row_section .image_div:hover {
+  -webkit-box-shadow: 0 0 .15rem #FFD700;
+          box-shadow: 0 0 .15rem #FFD700;
+}
+
+.container-fluid #pictures_row_section .image_div .creations_image {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.container-fluid #pictures_row_section .image_div .creations_image:hover {
+  opacity: .3;
+}
+
+@-webkit-keyframes textHoverAnim {
+  from {
+    text-shadow: 0.15rem 0.15rem 0.15rem white;
+  }
+  25% {
+    text-shadow: 0.5rem 0.15rem 0.15rem white;
+  }
+  50% {
+    text-shadow: 0rem 0.15rem 0.15rem white;
+  }
+  75% {
+    text-shadow: -0.5rem 0.15rem 0.15rem white;
+  }
+  to {
+    text-shadow: 0.15rem 0.15rem 0.15rem white;
+  }
+}
+
+@keyframes textHoverAnim {
+  from {
+    text-shadow: 0.15rem 0.15rem 0.15rem white;
+  }
+  25% {
+    text-shadow: 0.5rem 0.15rem 0.15rem white;
+  }
+  50% {
+    text-shadow: 0rem 0.15rem 0.15rem white;
+  }
+  75% {
+    text-shadow: -0.5rem 0.15rem 0.15rem white;
+  }
+  to {
+    text-shadow: 0.15rem 0.15rem 0.15rem white;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .description {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
